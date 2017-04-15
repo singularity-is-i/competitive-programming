@@ -9,6 +9,8 @@ class Template {
 
 		for(int currentCase = 0; currentCase < totalCases; currentCase++) {
 			// Do work for each test case here...
+
+			System.out.println("Case #" + (currentCase + 1) ": ");
 		}
 	}
 }
