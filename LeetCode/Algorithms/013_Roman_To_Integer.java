@@ -1,8 +1,5 @@
-import java.io.*;
-import java.util.*;
-
-class Roman_To_Integer {
-	public static int getValue(char letter) {
+public class Solution {
+    public int getValue(char letter) {
 		switch (letter) {
 			case 'I':	return 1;
 			case 'V':	return 5;
@@ -14,9 +11,9 @@ class Roman_To_Integer {
 			default:	return 0;
 		}
 	}
-
-	public static int romanToInt(String s) {
-		int number = 0;
+    
+    public int romanToInt(String s) {
+        int number = 0;
 		int lastValue = 0;
 
 		for(int i = 0; i < s.length(); i++) {
@@ -31,9 +28,5 @@ class Roman_To_Integer {
 		}
 
 		return number;
-	}
-
-	public static void main(String[] args) {
-		System.out.println(romanToInt("MMMXLVIII"));
-	}
+    }
 }

@@ -1,10 +1,7 @@
-import java.io.*;
-import java.util.*;
-
-class Palindrome_Number {
-	public static boolean isPalindrome(int x) {
+public class Solution {
+    public boolean isPalindrome(int x) {
 		boolean isPalindrome = true;
-
+		
 		String value = Integer.toString(x);
 
 		int firstIndex = 0;
@@ -21,9 +18,5 @@ class Palindrome_Number {
 		}
 
 		return isPalindrome;
-	}
-
-	public static void main(String[] args) {
-		System.out.println(isPalindrome(23322));
-	}
+    }
 }

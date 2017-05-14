@@ -1,8 +1,5 @@
-import java.io.*;
-import java.util.*;
-
-class Two_Sum {
-	public int[] twoSum(int[] nums, int target) {
+public class Solution {
+    public int[] twoSum(int[] nums, int target) {
 		Map<Integer, Integer> compliments = new HashMap<>();
 
 		for(int index = 0; index < nums.length; index++) {
